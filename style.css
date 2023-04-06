@@ -335,3 +335,9 @@
         bottom: 102px;
     }
 }
+
+@media (min-width: 1366px) {
+    .body {
+        width: 1120px;
+    }
+}
