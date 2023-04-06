@@ -1,0 +1,337 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: "TT Lakes Regular";
+    src: local("TT Lakes Regular"), url("/fonts/TTLakes-Regular.eot") format("eot"), url("/fonts/TTLakes-Regular.ttf") format("ttf"), url("/fonts/TTLakes-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Lakes Medium";
+    src: local("TT Lakes Medium"), url("/fonts/TTLakes-Medium.eot") format("eot"), url("/fonts/TTLakes-Medium.ttf") format("ttf"), url("/fonts/TTLakes-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Lakes Condensed-Medium";
+    src: local("TT Lakes Condensed-Medium"), url("/fonts//TTLakesCondensed-Medium.eot") format("eot"), url("/fonts/TTLakesCondensed-Medium.ttf") format("ttf"), url("/fonts/TTLakesCondensed-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Lakes Bold";
+    src: local("TT Lakes Bold"), url("/fonts/TTLakes-Bold.eot") format("eot"), url("/fonts/TTLakes-Bold.ttf") format("ttf"), url("/fonts/TTLakes-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+.body {
+    min-width: 320px;
+    min-height: 100%;
+    margin: 0;
+    font-size: 14px;
+    font-family: "TT Lakes Medium", sans-serif;
+    line-height: 18px;
+    background-color: #F8F8F8;
+    overflow-x: scroll;
+}
+
+.header {
+    background-color: #FFFFFF;
+
+}
+
+.header__margin {
+    margin-bottom: 24px;
+}
+
+.header-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0 12px;
+}
+
+.container {
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.menu__item--logo {
+    padding-right: 10px;
+}
+
+.menu__item--invisible {
+    display: none;
+}
+
+.header-nav__list--gap {
+    display: none;
+}
+
+.main__top {
+    padding-top: 23px;
+}
+
+.main__top--visible {
+    display: none;
+}
+
+.main__title {
+    position: relative;
+    padding: 13px 16px 22px;
+    margin-bottom: 10px;
+    letter-spacing: -0.1px;
+}
+
+.main__title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    border-radius: 50px 0px 0px 50px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.main-navigation {
+    margin-bottom: 24px;
+}
+
+.navigation-list {
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+}
+
+.navigation-list__item {
+    white-space: nowrap;
+    padding: 8px 10px 8px 17px;
+}
+
+.navigation-list__item--active {
+    background-color: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.navigation-list__link {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    text-decoration: none;
+    text-overflow: initial;
+}
+
+.main-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-description__container {
+    padding: 0 16px;
+}
+
+.main-description__button {
+    position: relative;
+    padding-left: 33px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.main-description__button::after {
+    content: url(/img/icon/read_more.svg);
+    position: absolute;
+    left: 8px;
+}
+
+.main-description__text {
+    font-family: "TT Lakes Regular", sans-serif;
+    color: #1B1C21;
+    letter-spacing: 0.2px;
+}
+
+.main-description__text--first {
+    margin-bottom: 16px;
+}
+
+.main__pic {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.main-description__wrap--padding {
+    margin-bottom: 14px;
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        padding: 0 23px;
+    }
+
+    .menu__item:first-child {
+        margin-right: 27px;
+    }
+
+    .menu__item:nth-child(5) {
+        margin-right: 27px;
+    }
+
+    .header__margin {
+        margin-bottom: 23px;
+    }
+
+    .header-nav__list {
+        gap: 16px;
+    }
+
+    .menu__item--logo {
+        flex-grow: 1;
+    }
+
+    .menu__item--invisible {
+        display: inline-block;
+    }
+
+    .main__top {
+        padding-top: 0;
+    }
+
+    .main__title {
+        margin-bottom: 20px;
+    }
+
+    .main-description {
+        flex-direction: row;
+        gap: 48px;
+        justify-content: space-between;
+        margin: 0 25px;
+        position: relative;
+    }
+
+    .main-description__container {
+        padding: 0;
+        width: 312px;
+        height: 160px;
+        overflow: hidden;
+    }
+
+    .main-description__container--big {
+        height: 260px;
+    }
+
+    .main-description__button--margin {
+        margin-bottom: -40px;
+    }
+
+    .main-navigation {
+        margin-bottom: 30px;
+    }
+
+    .main-description__button {
+        position: absolute;
+        bottom: 19px;
+    }
+
+    .main-description__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .main__pic {
+        max-width: 100%;
+        min-height: 208px;
+        flex-grow: 2;
+    }
+}
+
+@media (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+
+    .main__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 32px 0;
+    }
+
+    .main__title {
+        margin: 0;
+        padding: 0;
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .main__title::before {
+        left: -32px;
+    }
+
+    .menu__main-top {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 16px;
+        line-height: 24px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .header-nav__list--gap {
+        display: flex;
+        gap: 3px;
+    }
+
+    .main-navigation {
+        margin-top: -6px;
+        margin-bottom: 17px;
+    }
+
+    .main-description {
+        margin: 0 34px;
+    }
+
+    .navigation-list {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        width: 1090px;
+    }
+
+    .main__pic-container {
+        flex-grow: 1;
+    }
+
+    .main-description__container {
+        flex-grow: 1;
+    }
+
+    .main__pic-container {
+        flex-grow: 1;
+    }
+
+    .main-description__button {
+        bottom: 102px;
+    }
+}
