@@ -10,124 +10,122 @@
 </head>
 
 <body class="body">
-    <header class="header header__margin container">
+    <header class="header body__header">
         <nav class="header-nav">
-            <ul class="header-nav__list menu">
+            <ul class="menu header-nav__list">
                 <li class="menu__item">
-                    <a href="#" class="menu__link">
-                        <img class="menu__icon" src="img/icon/burger.svg" alt="Меню">
-                    </a>
+                    <button class="btn button-icon">
+                        <img src="img/icon/burger.svg" alt="Меню">
+                    </button>
                 </li>
                 <li class="menu__item menu__item--logo">
-                    <a href="#" class="menu__link">
-                        <img class="menu__icon" src="img/icon/logo.svg" alt="">
-                    </a>
-                </li>
-
-                <li class="menu__item menu__item--invisible">
-                    <a href="#" class="menu__link">
-                        <img class="menu__icon" src="img/icon/call.svg" alt="Заказать звонок">
+                    <a href="index.html" class="button-icon button-icon--logo logo">
+                        <img src="img/icon/logo.svg" alt="">
                     </a>
                 </li>
                 <li class="menu__item menu__item--invisible">
-                    <a href="#" class="menu__link">
-                        <img class="menu__icon" src="img/icon/chat.svg" alt="Обратная связь">
-                    </a>
+                    <button class="btn button-icon">
+                        <img src="img/icon/call.svg" alt="Заказать звонок">
+                    </button>
                 </li>
                 <li class="menu__item menu__item--invisible">
-                    <a href="#" class="menu__link menu__link--profile">
-                        <img class="menu__icon" src="img/icon/profile.svg" alt="Перейти в профиль">
-                    </a>
+                    <button class="btn button-icon">
+                        <img src="img/icon/chat.svg" alt="Обратная связь">
+                    </button>
+                </li>
+                <li class="menu__item menu__item--invisible">
+                    <button class="btn button-icon">
+                        <img src="img/icon/profile.svg" alt="Перейти в профиль">
+                    </button>
+                </li>
+                <li class="menu__item menu__item--repair">
+                    <button class="btn button-icon">
+                        <img src="img/icon/repair.svg" alt="Ремонт">
+                    </button>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">
-                        <img class="menu__icon" src="img/icon/repair.svg" alt="Ремонт">
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">
-                        <img class="menu__icon" src="img/icon/checkstatus.svg" alt="Проверка статуса ремонта">
-                    </a>
+                    <button class="btn button-icon">
+                        <img src="img/icon/checkstatus.svg" alt="Проверка статуса ремонта">
+                    </button>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <div class="main__top ">
-            <h1 class="main__title">Услуги и сервисы</h1>
-            <ul class="header-nav__list header-nav__list--gap menu">
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__main-top">
-                        <span>Оставить заявку</span>
-                        <img class="menu__icon" src="img/icon/repair.svg" alt="Ремонт">
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__main-top">
-                        <span>Статус ремонта</span>
-                        <img class="menu__icon" src="img/icon/checkstatus.svg" alt="Проверка статуса ремонта">
-                    </a>
-                </li>
-            </ul>
+        <div class="main__top">
+            <h1 class="title main__title">Услуги и сервисы</h1>
+            <nav class="header-nav main__icon main__icon--disabled">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <button class="btn button-icon button-icon--main-top">
+                            <span class="button-icon__text text-item">Оставить заявку</span>
+                            <img src="img/icon/repair.svg" alt="Ремонт">
+                        </button>
+                    </li>
+                    <li class="menu__item">
+                        <button class="btn button-icon button-icon--main-top">
+                            <span class="button-icon__text">Статус ремонта</span>
+                            <img src="img/icon/checkstatus.svg" alt="Проверка статуса ремонта">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="main-navigation container">
-            <ul class="navigation-list">
-                <li class="navigation-list__item navigation-list__item--active">
-                    <a class="navigation-list__link">
-                        <span class="navigation-list__text">Ремонтируемые устройства</span>
+        <nav class="main__nav">
+            <ul class="nav-list">
+                <li class="nav-list__item nav-list__item--active">
+                    <a class="nav-list__link" href="#">
+                        Ремонтируемые устройства
                     </a>
                 </li>
-                <li class="navigation-list__item">
-                    <a class="navigation-list__link">
-                        <span class="navigation-list__text">Дополнительные услуги</span>
+                <li class="nav-list__item">
+                    <a class="nav-list__link" href="#">
+                        Дополнительные услуги
                     </a>
                 </li>
-                <li class="navigation-list__item">
-                    <a class="navigation-list__link">
-                        <span class="navigation-list__text">Цены на услуги</span>
+                <li class="nav-list__item">
+                    <a class="nav-list__link" href="#">
+                        Цены на услуги
                     </a>
                 </li>
-                <li class="navigation-list__item">
-                    <a class="navigation-list__link">
-                        <span class="navigation-list__text">Специальные цены</span>
+                <li class="nav-list__item">
+                    <a class="nav-list__link" href="#">
+                        Специальные цены
                     </a>
                 </li>
-                <li class="navigation-list__item">
-                    <a class="navigation-list__link">
-                        <span class="navigation-list__text">Адреса сервисных центров</span>
+                <li class="nav-list__item">
+                    <a class="nav-list__link" href="#">
+                        Адреса сервисных центров
                     </a>
                 </li>
-                <li class="navigation-list__item">
-                    <a class="navigation-list__link">
-                        <span class="navigation-list__text">Отзывы</span>
+                <li class="nav-list__item">
+                    <a class="nav-list__link" href="#">
+                        Отзывы
                     </a>
                 </li>
             </ul>
         </nav>
-        <section class="main-description">
-            <div class="main-description__container">
-                <div class="main-description__wrap main-description__wrap--padding">
-                    <p class="main-description__text main-description__text--first">Мы являемся авторизованным
-                        сервисным
-                        центром
-                        по ремонту техники Dell. Только у
-                        нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                    <details class="main-description__details">
-                        <summary class="main-description__button">Читать далее</summary>
-                        <p class="main-description__text main-description__text--detail">Мы успешно работаем
-                            с 1992 года и заслужили репутацию
-                            надежного партнера, что подтверждает
-                            большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
-                            рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-                    </details>
+        <section class="main__desc">
+            <div>
+                <div class="main__text">
+                    <p class="main__paragraph">Мы являемся авторизованным
+                        сервисным центром по ремонту техники Dell. Только у
+                        нас вы можете отремонтировать свой ноутбук Dell с
+                        официальной гарантией производителя.</p>
+                    <p>Мы успешно работаем
+                        с 1992 года и заслужили репутацию
+                        надежного партнера, что подтверждает
+                        большое количество постоянных клиентов.
+                        Мы гордимся тем, что к нам обращаются по
+                        рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
                 </div>
+                <button class="btn button-read-more">Читать далее</button>
             </div>
-            <div class="main__pic-container">
-                <img class="main__pic" src="img/bg-main.jpg" alt="Логотип кмопании CPS">
+            <div class="main__pic-wrap">
+                <img  class="main__pic" src="img/bg-main.jpg" alt="Логотип кмопании CPS">
             </div>
         </section>
     </main>
-    <script src="script.js"></script>
 </body>
 
 </html>
