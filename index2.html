@@ -9,100 +9,84 @@
     <title>CPS</title>
 </head>
 
-<body class="body mobile-menu">
-    <header class="header mobile-menu__header">
-        <nav class="header-nav">
-            <ul class="menu">
-                <li class="menu__item">
-                    <button class="btn button-icon">
-                        <img src="img/icon/close.svg" alt="Меню открытое">
-                    </button>
-                </li>
-                <li class="menu__item menu__item--logo-mobile">
-                    <a href="index.html" class="button-icon button-icon--logo logo">
-                        <img src="img/icon/logo.svg" alt="">
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <button class="btn button-icon">
-                        <img src="img/icon/search.svg" alt="Поиск">
-                    </button>
-                </li>
-            </ul>
-        </nav>
+<aside class="aside">
+    <header class="aside__header">
+        <button class="btn button-icon">
+            <img src="img/icon/close.svg" alt="Меню открытое">
+        </button>
+        <a href="index.html" class="logo aside__logo">
+            <img src="img/icon/logo.svg" alt="Логотип">
+        </a>
+        <button class="btn button-icon">
+            <img src="img/icon/search.svg" alt="Поиск">
+        </button>
     </header>
-    <main class="mobile-menu__main">
-        <ul class="mobile-menu__list">
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link mobile-menu__link--active" href="#">
+    <nav class="aside-nav aside__nav">
+        <ul class="aside-nav__list">
+            <li class="aside-nav__item">
+                <a class="aside-nav__link aside-nav__link--active" href="#">
                     Ремонт техники
                 </a>
             </li>
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="#">
+            <li class="aside-nav__item">
+                <a class="aside-nav__link" href="#">
                     Услуги и сервисы
                 </a>
             </li>
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="#">
+            <li class="aside-nav__item">
+                <a class="aside-nav__link" href="#">
                     Корпоративным клиентам
                 </a>
             </li>
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="#">
+            <li class="aside-nav__item">
+                <a class="aside-nav__link" href="#">
                     Продавцам техники
                 </a>
             </li>
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="#">
+            <li class="aside-nav__item">
+                <a class="aside-nav__link" href="#">
                     Партнерам
                 </a>
             </li>
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="#">
+            <li class="aside-nav__item">
+                <a class="aside-nav__link" href="#">
                     Производителям
                 </a>
             </li>
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="#">
+            <li class="aside-nav__item">
+                <a class="aside-nav__link" href="#">
                     Наши сервисные центры
                 </a>
             </li>
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="#">
+            <li class="aside-nav__item">
+                <a class="aside-nav__link" href="#">
                     Контакты
                 </a>
             </li>
         </ul>
-    </main>
-    <footer class="mobile-menu__footer">
-        <nav class="header-nav">
-            <ul class="menu mobile-menu__menu">
-                <li class="menu__item">
-                    <button class="btn button-icon">
-                        <img src="img/icon/call.svg" alt="Меню открытое">
-                    </button>
-                </li>
-                <li class="menu__item">
-                    <button class="btn button-icon">
-                        <img src="img/icon/chat.svg" alt="Меню открытое">
-                    </button>
-                </li>
-                <li class="menu__item">
-                    <button class="btn button-icon">
-                        <img src="img/icon/profile.svg" alt="Поиск">
-                    </button>
-                </li>
-            </ul>
-        </nav>
-        <a class="mobile-menu__mail" href="mailto:mail@cps.com">mail@cps.com</a>
-        <a class="mobile-menu__tel" href="mailto:+78008908900">8 800 890 8900</a>
-        <ul class="mobile-menu__lang">
-            <li><a class="mobile-menu__link mobile-menu__link--active" href="#">RU</a></li>
-            <li><a class="mobile-menu__link" href="#">EN</a></li>
-            <li><a class="mobile-menu__link" href="#">CH</a></li>
+    </nav>
+    <footer class="aside__footer">
+        <div class="icon-list aside__icons">
+            <button class="btn button-icon">
+                <img src="img/icon/call.svg" alt="Звонок">
+            </button>
+            <button class="btn button-icon">
+                <img src="img/icon/chat.svg" alt="Чат">
+            </button>
+            <button class="btn button-icon">
+                <img src="img/icon/profile.svg" alt="Профиль">
+            </button>
+        </div>
+        <address class="address">
+            <a class="contact-mail" href="mailto:mail@cps.com">mail@cps.com</a>
+            <a class="contact-tel" href="mailto:+78008908900">8 800 890 8900</a>
+        </address>
+        <ul class="lang-toggle aside__lang">
+            <li><a class="lang-toggle__link lang-toggle__link--active" href="#">RU</a></li>
+            <li><a class="lang-toggle__link" href="#">EN</a></li>
+            <li><a class="lang-toggle__link" href="#">CH</a></li>
         </ul>
     </footer>
-</body>
+</aside>
 
 </html>
