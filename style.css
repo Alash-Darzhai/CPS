@@ -360,7 +360,7 @@
 }
 
 .button-show-more::after {
-    content: url(/img/icon/read_more.svg);
+    content: url(img/icon/read_more.svg);
     position: absolute;
     left: 23px;
 }
@@ -670,7 +670,6 @@
 
 .subtitle {
     font-size: 16px;
-    font-family: "TT Lakes Regular";
     font-weight: 100;
     line-height: 24px;
     letter-spacing: -0.2px;
